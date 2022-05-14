@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="shortcut icon" href="microprocessador.png">
+    <link rel="stylesheet" href="../cruzadinha1.0/barra.css">
+    <title>Cruzadinha</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro&family=Ubuntu&display=swap');
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <img class="icone-header" src="cruzadinha.png">
+
+        <div class="titulo">
+            <h1>PALAVRAS CRUZADAS</h1> <br>
+            <h4>ARQUITETURA DE COMPUTADORES</h4>
+        </div>
+
+
+    </header>
+
+
+    <div class="all">
+        <!-- <div id="ladoA">
+        </div> -->
+
+        <div id="meio">
+            <table border="0" class="tabela">
+                <span id="audio_tudo">
+                    <tr>
+                        <td></td>
+                        <td>1 -</td>
+                        <td><input id="F" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2 -</td>
+                        <td></td>
+                        <td><input id="L" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input id="Q" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="U" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="D" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="vazio" readonly="readonly"> </td>
+                        <td><input id="C" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="O" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="R" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="E" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+
+                        
+
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><input id="S" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="S" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="P" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td>7</td>
+                        <td></td>
+                        <td></td>
+                        <td>8</td>
+                        <td></td>
+                        <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><input id="H" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td>9</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>6 -</td>
+                        <td><input id="R" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="E" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="G" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="I" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="S" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="T" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="R" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="D" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="O" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="R" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="E" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="S" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="D" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="O" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="7" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="O" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td><input id="D" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="U" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td>10 - </td>
+                        <td><input id="D" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="M" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="M" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td><input id="R" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>11 - </td>
+                        <td><input id="R" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="M" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="E" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="L" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>12</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="S" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="vazio" readonly="readonly"> </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="D" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="S" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="C" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>14</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="vazio" readonly="readonly"> </td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="O" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td>13 -</td>
+                        <td><input id="C" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="P" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="U" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="T" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="B" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="R" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>16</td>
+                        <td><input id="L" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="U" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>15 -</td>
+                        <td><input id="M" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="E" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="M" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="O" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="R" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="I" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="vazio" readonly="readonly"> </td>
+                        <td><input id="D" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="E" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="vazio" readonly="readonly"> </td>
+                        <td><input id="M" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="S" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="S" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td><input id="A" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="5" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="B" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="U" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><input id="S" onkeyup="mostraTotal(this);" type="text" maxlength="1"></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </span>
+            </table>
+        </div>
+
+
+        <div id="ladoB">
+            <ol class="dicas_pai">
+                <h2 class="titulo_dicas"> DICAS PARA RESOLUÇÃO 📋</h2>
+                <li>Chip de memória do computador que mantém informações
+                    armazenadas sem a necessidade de uma fonte de energia</li> <br>
+
+                <li>Processador com quatro núcleos  </li> <br>
+
+                <li>Unidade fundamental para permitir à CPU acessar memórias 
+                    e/ou periféricos externos</li> <br>
+
+                <li>Dispositivo que pode ter os dados regravados por meio de 
+                    um componente que emite luz ultravioleta</li> <br>
+
+                <li>Identificador do ''endereço''/localização dos dados</li> <br>
+
+                <li>Memória de alta velocidade, utilizada para armazenar 
+                    informações necessárias para a execução de instruções</li> <br>
+
+                <li>Processador da Intel que oferece um maior desempenho, 
+                    estando entre os mais potentes do mercado</li> <br>
+
+                <li>Componente responsável por carregar as configurações 
+                    básicas antes de inicializar o sistema operacional</li> <br>
+
+                <li>Processador com dois núcleos</li> <br>
+
+                <li>Recurso da placa-mãe que capacita o acesso dos periféricos direto à memoria RAM, 
+                    sem que haja a sobrecarga do processador</li> <br>
+
+                <li>Componente que torna possível abrir programas e editar arquivos de uma forma ágil</li> <br>
+
+                <li>Responsável por transferir dados ente os componentes de um computador</li> <br>
+
+                <li> Componente que faz com que: dada uma entrada de dados, 
+                    haja uma saída pós processamento</li> <br>
+
+                <li>Componente de exatas do computador</li> <br>
+
+                <li>Item não-volátil que faz com que as informações permaneçam mesmo 
+                    com o desligamento do computador ou a ausência de energia</li> <br>
+
+                <li>Processador da Intel que oferece um ótimo custo benefício</br>
+            </ol>
+        </div>
+    </div>
+    <div class="foo">
+
+        <div class="developers">
+
+            <br>
+            <h4>© 2022 </h4>
+
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="raspadinha.js"></script>

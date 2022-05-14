@@ -1,0 +1,145 @@
+
+
+/* BARRA DE ROLAR */
+
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    background-color:#000000; /* Cor de fundo */ 
+
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Ubuntu;
+}
+
+.tabela {
+    margin: 12px 0 0 0;
+}
+
+td {
+    border: none;
+    color:#d5dd60;; /*Cor dos numeros da cruzadinha*/
+    font-weight: bold;
+    text-align: center;
+    border-radius: 2px;
+}
+
+.all {
+    width: 100%;
+    height: 75%;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(20, 20, 20); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     border-bottom: 5px solid #120fa7;  /* Linha da parte de cima  */
+}
+
+.titulo {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+header h1 {
+    font-size: 30px;
+    color: #ffffff; /* Cor da letra rodapé */
+    
+}
+
+header h4 {
+    color: #ffffff /* Cor do titulo q fica la em cima */
+}
+
+.icone-header {
+    width:70px;
+    padding: 10px;
+}
+
+#meio {
+    width: 60%;
+    height: 88%x;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#ladoB {
+    width: 40%;
+    height: 100%;
+    float: right;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    padding-top:20px;
+    
+}
+
+.titulo_dicas {
+    text-align: center;
+    padding-bottom: 20px;
+    color:rgb(255, 255, 255); /* Cor do titulo */
+}
+
+li {
+    font-size: 13px;
+    margin: 0 80px 0 60px;
+    height:100%;
+    text-align: center;
+    color:  #ffffff; /* Cor das dicas */
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+input {
+    width: 21px;
+    height: 21px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border:1px solid
+}
+
+#vazio {
+    background-color:  #277dce; /*Cor dos quadradinhos vazio*/
+    border: none;
+    width:23px;
+    height: 23px;
+}
+.foo {
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+    border-top:3px solid #120fa7;   /* Linha da parte de cima  */
+    flex-direction: column;
+}
+
+.dicas_pai{
+    height: 100px;
+}
+
+
+
+
+
